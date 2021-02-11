@@ -1,0 +1,464 @@
+1.
+
+Register values:
+
+x3 = 0x12345678
+
+ 
+
+Instruction sequence:
+
+addi x4, x0, 0xfff
+
+xor x5, x3, x4
+
+
+
+
+
+2. 
+
+
+Register values:
+
+x3 = 0x3456789a
+
+x4 = 0x007e0000
+
+ 
+
+Instruction sequence:
+
+or x5, x3, x4
+
+
+
+3.
+
+
+Instruction sequence:
+
+sltiu x12, x0, 0x800
+
+slli x12, x12, 17
+
+
+
+4.
+
+Register values:
+
+x3 = 0x3456789a
+
+ 
+
+Instruction sequence:
+
+andi x5, x3, 0x03f
+
+
+5.
+
+lui x12, 0x12568
+addi x12, x12, 0x943
+
+
+6.
+
+
+Register values:
+
+x3 = 0x12345678
+
+x4 = 0x55555555
+
+ 
+
+Instruction sequence:
+
+or x5, x3, x4
+
+
+
+7.
+
+
+Register values:
+
+x3 = 0x12345678
+
+ 
+
+Instruction sequence:
+
+xori x4, x0, 26
+
+sll x5, x3, x4
+
+
+
+
+8.
+
+
+Register values:
+
+x3 = 0x89abcdef
+
+ 
+
+Instruction sequence:
+
+ori x4, x0, 13
+
+sra x5, x3, x4
+
+
+
+
+9.
+
+
+Register values:
+
+x3 = 0x89abcdef
+
+ 
+
+Instruction sequence:
+
+addi x4, x0, 21
+
+sra x5, x3, x4
+
+
+
+
+
+10.
+
+
+Register values:
+
+PC = 0x000004b0
+
+ 
+
+Instruction sequence:
+
+ori x9, x0, 0xdef
+
+srli x10, x9, 1
+
+blt x9, x10, 12
+
+
+
+
+11.
+
+
+Register values:
+
+PC = 0x00000490
+
+ 
+
+Instruction sequence:
+
+ori x9, x0, 0x1
+
+slt x10, x0, x9
+
+beq x9, x10, 16
+
+
+
+
+
+12.
+
+
+Register values:
+
+PC = 0x000004a0
+
+ 
+
+Instruction sequence:
+
+ori x9, x0, 0xabc
+
+addi x10, x9, 1
+
+bgeu x9, x10, 8
+
+
+
+
+13.
+
+
+Register values:
+
+x5 = 0x23456789
+
+ 
+
+Instruction sequence:
+
+sw x5, 40(x0)
+
+lhu x7, 40(x0)
+
+
+
+
+14.
+
+
+
+Register values:
+
+x5 = 0x98765432
+
+ 
+
+Instruction sequence:
+
+sw x5, 40(x0)
+
+lbu x7, 41(x0)
+
+
+
+
+15.
+
+
+Register values:
+
+x5 = 0x23456789
+
+ 
+
+Instruction sequence:
+
+addi x5, x5, 0x37
+
+sw x5, 40(x0)
+
+lhu x7, 40(x0)
+
+
+
+
+
+16.
+
+
+Register values:
+
+x5 = 0xcc556677
+
+ 
+
+Instruction sequence:
+
+sh x5, 40(x0)
+
+srai x5, x5, 24
+
+sh x5, 42(x0)
+
+lh x7, 42(x0)
+
+
+
+
+17.
+
+
+
+Register values:
+
+x5 = 0x66778899
+
+ 
+
+Instruction sequence:
+
+sw x5, 40(x0)
+
+lh x7, 40(x0)
+
+
+
+
+18.
+
+
+
+Register values:
+
+x5 = 0x44dd6677
+
+ 
+
+Instruction sequence:
+
+sh x5, 42(x0)
+
+srli x5, x5, 8
+
+sh x5, 40(x0)
+
+lh x7, 40(x0)
+
+
+
+
+19.
+
+
+Register values:
+
+x5 = 0x56789abc
+
+ 
+
+Instruction sequence:
+
+sb x5, 61(x0)
+
+srai x6, x5, 8
+
+sh x6, 62(x0)
+
+srai x6, x6, 16
+
+sb x6, 60(x0)
+
+lw x7, 60(x0)
+
+
+
+
+20.
+
+
+Register values:
+
+x5 = 0xaabbccdd
+
+ 
+
+Instruction sequence:
+
+sb x5, 60(x0)
+
+srli x6, x5, 8
+
+sb x6, 62(x0)
+
+srli x6, x6, 8
+
+sb x6, 61(x0)
+
+srli x6, x6, 8
+
+sb x6, 63(x0)
+
+lw x7, 60(x0)
+
+
+
+
+21.
+
+
+
+Register values:
+
+x5 = 0x22334455
+
+ 
+
+Instruction sequence:
+
+sb x5, 62(x0)
+
+srai x6, x5, 8
+
+sb x6, 61(x0)
+
+srai x6, x6, 8
+
+sb x6, 60(x0)
+
+srai x6, x6, 8
+
+sb x6, 63(x0)
+
+lw x7, 60(x0)
+
+
+
+
+22.
+
+
+Register values:
+
+PC = 0x00000260
+
+ 
+
+Instruction sequence:
+
+addi x9, x0, 0x24
+
+add x9, x9, x9
+
+jal x9, 40
+
+ 
+ 
+ 
+ 
+ 
+ 23.
+ 
+ 
+ Register values:
+
+x19 = 0x00000428
+
+PC = 0x0000028c
+
+ 
+
+Instruction sequence:
+
+jalr x22, 0x4c(x19)
+
+ 
+ 
+ 
+ 
+ 
+ 24.
+ 
+ 
+ 
+ Register values:
+
+PC = 0x00000430
+
+ 
+
+Instruction sequence:
+
+ori x9, x0, 0x820
+
+auipc x9, 0x4
