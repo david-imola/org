@@ -1,0 +1,62 @@
+10.
+
+Register values:
+
+PC = 0x00000470
+
+ 
+
+Instruction sequence:
+
+addi x9, x0, 0x037
+
+andi x10, x9, 0x0ff
+
+bne x9, x10, 12
+
+
+
+11.
+
+Register values:
+
+x5 = 0x89abcdef
+
+ 
+
+Instruction sequence:
+
+sw x5, 40(x0)
+
+lbu x7, 41(x0)
+
+
+12.
+
+Register values:
+
+x5 = 0xab89efcd
+
+ 
+
+Instruction sequence:
+
+sw x5, 56(x0)
+
+lh x7, 56(x0)
+
+
+13.
+
+Register values:
+
+x5 = 0x89abcdef
+
+ 
+
+Instruction sequence:
+
+sb x5, 83(x0)
+srli x6, x5, 24
+sb x6, 82(x0)
+lh x7, 82(x0)
